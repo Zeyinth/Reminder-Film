@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder Film</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <a href="#" style="text-decoration: none;">
+            <h1 style="color: black;">Movie<b class="h1-text">List</b></h1>
+        </a>
+        <ul class="menu">
+            <li><a href="https://movie-list-oj6aanzgt-zeyinths-projects.vercel.app/"><b
+                        style="color: azure;">Back</b></a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <h1>Kapan Mau Menonton Filmnya?</h1>
+        <div class="reminder-form">
+            <label for="film">Film: </label>
+            <input type="text" id="movie" placeholder="Nama Film">
+            <label for="time">Waktu:</label>
+            <input type="time" id="time">
+            <button onclick="setReminder()">Set Pengingat</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

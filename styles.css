@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(bg1.jpeg);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(209, 205, 205, 0.644);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.reminder-form {
+    margin-top: 20px;
+}
+
+.reminder-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reminder-form input[type="text"],
+.reminder-form input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reminder-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f5340d75;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reminder-form button:hover {
+    background-color: #702216ad;
+}
+
+.nav-container {
+    background-color: rgba(49, 33, 33, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.container {
+    padding-top: 60px;
+}
+
+.menu li a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(209, 205, 205, 0.5);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.menu li a:hover::before {
+    width: 100%;
+}
+
+.menu li a:active::before {
+    width: 100%;
+}
+
+.menu li a:active {
+    color: #fff;
+    background-color: #f00;
+}
+
+.h1-text {
+    color: rgba(180, 10, 10, 0.938);
+}
